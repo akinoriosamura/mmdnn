@@ -1,0 +1,10 @@
+version: '3'
+services:
+  mmdnn:
+    stdin_open: true
+    tty: true
+    command: /bin/bash
+    build: .
+    container_name: mmdnn
+    volumes:
+      - ./:/usr/src/app
